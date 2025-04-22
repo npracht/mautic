@@ -1273,7 +1273,8 @@ Mautic.activateDateTimeInputs = function(el, type) {
             validateOnBlur: false,
             allowBlank: true,
             scrollMonth: false,
-            scrollInput: false
+            scrollInput: false,
+            lang: window.mauticLocale.split('_')[0]
         });
     } else if(type == 'date') {
         mQuery(el).datetimepicker({
@@ -1284,7 +1285,8 @@ Mautic.activateDateTimeInputs = function(el, type) {
             allowBlank: true,
             scrollMonth: false,
             scrollInput: false,
-            closeOnDateSelect: true
+            closeOnDateSelect: true,
+            lang: window.mauticLocale.split('_')[0]
         });
     } else if (type == 'time') {
         mQuery(el).datetimepicker({
@@ -1294,7 +1296,8 @@ Mautic.activateDateTimeInputs = function(el, type) {
             validateOnBlur: false,
             allowBlank: true,
             scrollMonth: false,
-            scrollInput: false
+            scrollInput: false,
+            lang: window.mauticLocale.split('_')[0]
         });
     }
 
